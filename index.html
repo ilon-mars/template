@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="icons/favicon.ico"/>
+  <title>Пример сайта автосервиса</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <header class="header">
+      <div class="header-contacts bg-light p-2 d-none d-lg-flex">
+        <div class="contacts__phone mr-auto ml-auto"><a href="tel:+71234567890" class="contact-link text-decoration-none text-secondary">+7(123)456-78-90</a></div>
+        <div class="contacts__email mr-auto ml-auto"><a href="mailto:example@email.com" class="contact-link text-decoration-none text-secondary">example@email.com</a></div>
+        <div class="contacts__shedule text-secondary mr-auto ml-auto">Пон-Пят: 9:00-18:00</div>
+      </div>
+      <div class="arrow bg-light text-center py-2 d-lg-none">
+        <img src="icons/arrow-down.png" alt="icon: arrow" class="arrow-image">
+      </div>
+      <div class="header-menu d-flex align-items-center p-2">
+        <div class="header-logo">
+          <img src="icons/logo.png" alt="logo" class="logo-image">
+        </div>
+        <div class="m-header-menu ml-auto d-lg-none">
+          <span class="line my-1"></span>
+          <span class="line my-1"></span>
+          <span class="line my-1"></span>
+        </div>
+        <nav class="menu d-none flex-column flex-lg-row d-lg-flex ml-auto">
+          <a href="#adventages" class="header-menu__link h5 text-decoration-none d-block text-white text-lg-dark mr-3">Преимущества</a>
+          <a href="#services" class="header-menu__link h5 text-decoration-none d-block text-white text-lg-dark mr-3">Услуги</a>
+          <a href="#contacts" class="header-menu__link h5 text-decoration-none d-block text-white text-lg-dark mr-3">Контакты</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="offer-photo">
+        <img src="img/photo1.jpg" alt="photo" class="w-100">
+      </div>
+      <div class="offer bg-light text-center p-2">
+        <p>Запишитесь на техосмотр уже сейчас!</p>
+        <button type="button" class="btn primary-bg text-white p-2 subscribe-btn">Записаться на техосмотр</button>
+      </div>
+      <div class="adventages mt-3" id="adventages">
+        <h2 class="h2 font-weight-lighter text-center text-uppercase title">Почему мы?</h2>
+        <div class="advantages-content d-lg-flex">
+          <div class="advantage-card text-center my-3">
+            <div class="advantage-image">
+              <svg class="advantage-icon">
+                <use xlink:href="icons/icons.svg#person"></use>
+              </svg>
+            </div>
+            <h4 class="h4 font-weight-lighter title">Первое преимущество</h4>
+            <div class="advantage-card__text text-center">Описание первого преимущества. Описание первого преимущества. Описание первого преимущества.</div>
+          </div>
+          <div class="advantage-card text-center my-3">
+            <div class="advantage-image">
+              <svg class="advantage-icon">
+                <use xlink:href="icons/icons.svg#repair"></use>
+              </svg>
+            </div>
+            <h4 class="h4 font-weight-lighter title">Второе преимущество</h4>
+            <div class="advantage-card__text text-center">Описание второго преимущества. Описание второго преимущества. Описание второго преимущества.</div>
+          </div>
+          <div class="advantage-card text-center my-3">
+            <div class="advantage-image">
+              <svg class="advantage-icon">
+                <use xlink:href="icons/icons.svg#service"></use>
+              </svg>
+            </div>
+            <h4 class="h4 font-weight-lighter title">Третье преимущество</h4>
+            <div class="advantage-card__text text-center">Описание третьего преимущества. Описание третьего преимущества. Описание третьего преимущества.</div>
+          </div>
+        </div>
+      </div>
+      <div class="services mt-3" id="services">
+        <h2 class="h2 font-weight-lighter text-center text-uppercase title">Предоставляемые услуги</h2>
+        <div class="services-content">
+          <div class="service-card bg-light my-3">
+            <div class="service-image">
+              <img src="img/photo2.jpg" alt="photo">
+            </div>
+            <h4 class="h4 font-weight-lighter p-2">Первая услуга</h4>
+          </div>
+          <div class="service-card bg-light my-3">
+            <div class="service-image">
+              <img src="img/photo3.jpg" alt="photo">
+            </div>
+            <h4 class="h4 font-weight-lighter p-2">Вторая услуга</h4>
+          </div>
+        </div>
+      </div>
+      <div class="contacts mt-3" id="contacts">
+        <h2 class="h2 font-weight-lighter text-center text-uppercase title">О нас</h2>
+        <div class="contacts-content">
+          <h4 class="h4 font-weight-lighter p-2">Адрес:</h4>
+          <p class="p-2">Город, улица</p>
+          <h4 class="h4 font-weight-lighter p-2">Часы работы:</h4>
+          <p class="p-2">Понедельник-Пятница: 9:00-18:00</p>
+          <h4 class="h4 font-weight-lighter p-2">Карта:</h4>
+          <div id="map"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer bg-secondary p-2 d-flex flex-column flex-md-row">
+      <div class="footer-contacts mb-2">
+        <div class="contacts__phone text-light px-2">
+          Телефон: <a href="tel:+71234567890" class="contact-link text-decoration-none text-light">+7(123)456-78-90</a>
+        </div>
+        <div class="contacts__email text-light px-2">
+          Почта: <a href="mailto:example@email.com" class="contact-link text-decoration-none text-light">example@email.com</a>
+        </div>
+      </div>
+      <button type="button" class="subscribe-btn btn primary-bg text-white p-2 align-self-center ml-md-auto">Записаться на техосмотр</button>
+    </footer>
+
+    <div class="overlay d-none"></div>
+    <div class="order d-none flex-column p-2">
+      <div class="d-flex">
+        <h2 class="h2 font-weight-lighter text-center text-uppercase title mt-auto">Записаться на техосмотр</h2>
+        <button type="button" class="close-btn btn p-2 align-self-start ml-auto">&#10006;</button>
+      </div>
+      <form class="order-form p-2 mb-auto">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Имя</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Введите имя..." required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault02">Номер телефона для связи</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="+7-ххх-ххх-хх-хх" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03">Номер автомобиля</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">Время для записи</label>
+            <select class="custom-select" id="validationDefault04" required>
+              <option selected disabled value="">Выбрать время</option>
+              <option value="9:00-10:00">9:00-10:00</option>
+              <option value="10:00-11:00">10:00-11:00</option>
+              <option value="11:00-12:00">11:00-12:00</option>
+              <option value="12:00-13:00">12:00-13:00</option>
+              <option value="13:00-14:00">13:00-14:00</option>
+              <option value="14:00-15:00">14:00-15:00</option>
+              <option value="15:00-16:00">15:00-16:00</option>
+              <option value="16:00-17:00">16:00-17:00</option>
+              <option value="17:00-18:00">17:00-18:00</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Выбрать дату</label>
+            <input type="date" class="form-control" id="validationDefault05" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Согласен с условиями обработки данных
+            </label>
+          </div>
+        </div>
+        <button class="submit-btn btn primary-bg text-white p-2" type="submit">Записаться на техосмотр</button>
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A994a98c92985a6f1674aa0be9c7e89cfc51627e558fa418466d5cf6c5eb63b56&amp;id=map&amp;lang=ru_RU&amp;scroll=true"></script>
+</body>
+</html>
